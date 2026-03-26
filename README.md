@@ -1,10 +1,10 @@
-# GitNexus
-⚠️ Important Notice:** GitNexus has NO official cryptocurrency, token, or coin. Any token/coin using the GitNexus name on Pump.fun or any other platform is **not affiliated with, endorsed by, or created by** this project or its maintainers. Do not purchase any cryptocurrency claiming association with GitNexus.
+# codeAgent
+⚠️ Important Notice:** codeAgent has NO official cryptocurrency, token, or coin. Any token/coin using the codeAgent name on Pump.fun or any other platform is **not affiliated with, endorsed by, or created by** this project or its maintainers. Do not purchase any cryptocurrency claiming association with codeAgent.
 
 <div align="center">
 
   <a href="https://trendshift.io/repositories/19809" target="_blank">
-    <img src="https://trendshift.io/api/badge/repositories/19809" alt="abhigyanpatwari%2FGitNexus | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/>
+    <img src="https://trendshift.io/api/badge/repositories/19809" alt="abhigyanpatwari%2FcodeAgent | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/>
   </a>
 
   <h2>Join the official Discord to discuss ideas, issues etc!</h2>
@@ -12,8 +12,8 @@
   <a href="https://discord.gg/AAsRVT6fGb">
     <img src="https://img.shields.io/discord/1477255801545429032?color=5865F2&logo=discord&logoColor=white" alt="Discord"/>
   </a>
-  <a href="https://www.npmjs.com/package/gitnexus">
-    <img src="https://img.shields.io/npm/v/gitnexus.svg" alt="npm version"/>
+  <a href="https://www.npmjs.com/package/codeAgent">
+    <img src="https://img.shields.io/npm/v/codeAgent.svg" alt="npm version"/>
   </a>
   <a href="https://polyformproject.org/licenses/noncommercial/1.0.0/">
     <img src="https://img.shields.io/badge/License-PolyForm%20Noncommercial-blue.svg" alt="License: PolyForm Noncommercial"/>
@@ -32,7 +32,7 @@ https://github.com/user-attachments/assets/172685ba-8e54-4ea7-9ad1-e31a3398da72
 
 
 
-> *Like DeepWiki, but deeper.* DeepWiki helps you *understand* code. GitNexus lets you *analyze* it — because a knowledge graph tracks every relationship, not just descriptions.
+> *Like DeepWiki, but deeper.* DeepWiki helps you *understand* code. codeAgent lets you *analyze* it — because a knowledge graph tracks every relationship, not just descriptions.
 
 **TL;DR:** The **Web UI** is a quick way to chat with any repo. The **CLI + MCP** is how you make your AI agent actually reliable — it gives Cursor, Claude Code, Codex, and friends a deep architectural view of your codebase so they stop missing dependencies, breaking call chains, and shipping blind edits. Even smaller models get full architectural clarity, making it compete with goliath models.
 
@@ -40,22 +40,22 @@ https://github.com/user-attachments/assets/172685ba-8e54-4ea7-9ad1-e31a3398da72
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=abhigyanpatwari/GitNexus&type=date&legend=top-left)](https://www.star-history.com/#abhigyanpatwari/GitNexus&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/svg?repos=abhigyanpatwari/codeAgent&type=date&legend=top-left)](https://www.star-history.com/#abhigyanpatwari/codeAgent&type=date&legend=top-left)
 
 
-## Two Ways to Use GitNexus
+## Two Ways to Use codeAgent
 
 |                   | **CLI + MCP**                                            | **Web UI**                                             |
 | ----------------- | -------------------------------------------------------------- | ------------------------------------------------------------ |
 | **What**    | Index repos locally, connect AI agents via MCP                 | Visual graph explorer + AI chat in browser                   |
 | **For**     | Daily development with Cursor, Claude Code, Codex, Windsurf, OpenCode | Quick exploration, demos, one-off analysis                   |
 | **Scale**   | Full repos, any size                                           | Limited by browser memory (~5k files), or unlimited via backend mode |
-| **Install** | `npm install -g gitnexus`                                    | No install —[gitnexus.vercel.app](https://gitnexus.vercel.app) |
+| **Install** | `npm install -g codeAgent`                                    | No install —[codeAgent.vercel.app](https://codeAgent.vercel.app) |
 | **Storage** | LadybugDB native (fast, persistent)                               | LadybugDB WASM (in-memory, per session)                         |
 | **Parsing** | Tree-sitter native bindings                                    | Tree-sitter WASM                                             |
 | **Privacy** | Everything local, no network                                   | Everything in-browser, no server                             |
 
-> **Bridge mode:** `gitnexus serve` connects the two — the web UI auto-detects the local server and can browse all your CLI-indexed repos without re-uploading or re-indexing.
+> **Bridge mode:** `codeAgent serve` connects the two — the web UI auto-detects the local server and can browse all your CLI-indexed repos without re-uploading or re-indexing.
 
 ---
 
@@ -67,16 +67,16 @@ The CLI indexes your repository and runs an MCP server that gives AI agents deep
 
 ```bash
 # Index your repo (run from repo root)
-npx gitnexus analyze
+npx codeAgent analyze
 ```
 
 That's it. This indexes the codebase, installs agent skills, registers Claude Code hooks, and creates `AGENTS.md` / `CLAUDE.md` context files — all in one command.
 
-To configure MCP for your editor, run `npx gitnexus setup` once — or set it up manually below.
+To configure MCP for your editor, run `npx codeAgent setup` once — or set it up manually below.
 
 ### MCP Setup
 
-`gitnexus setup` auto-detects your editors and writes the correct global MCP config. You only need to run it once.
+`codeAgent setup` auto-detects your editors and writes the correct global MCP config. You only need to run it once.
 
 ### Editor Support
 
@@ -97,23 +97,23 @@ Built by the community — not officially maintained, but worth checking out.
 
 | Project | Author | Description |
 |---------|--------|-------------|
-| [pi-gitnexus](https://github.com/tintinweb/pi-gitnexus) | [@tintinweb](https://github.com/tintinweb) | GitNexus plugin for [pi](https://pi.dev) — `pi install npm:pi-gitnexus` |
-| [gitnexus-stable-ops](https://github.com/ShunsukeHayashi/gitnexus-stable-ops) | [@ShunsukeHayashi](https://github.com/ShunsukeHayashi) | Stable ops & deployment workflows (Miyabi ecosystem) |
+| [pi-codeAgent](https://github.com/tintinweb/pi-codeAgent) | [@tintinweb](https://github.com/tintinweb) | codeAgent plugin for [pi](https://pi.dev) — `pi install npm:pi-codeAgent` |
+| [codeAgent-stable-ops](https://github.com/ShunsukeHayashi/codeAgent-stable-ops) | [@ShunsukeHayashi](https://github.com/ShunsukeHayashi) | Stable ops & deployment workflows (Miyabi ecosystem) |
 
-> Have a project built on GitNexus? Open a PR to add it here!
+> Have a project built on codeAgent? Open a PR to add it here!
 
 If you prefer manual configuration:
 
 **Claude Code** (full support — MCP + skills + hooks):
 
 ```bash
-claude mcp add gitnexus -- npx -y gitnexus@latest mcp
+claude mcp add codeAgent -- npx -y codeAgent@latest mcp
 ```
 
 **Codex** (full support — MCP + skills):
 
 ```bash
-codex mcp add gitnexus -- npx -y gitnexus@latest mcp
+codex mcp add codeAgent -- npx -y codeAgent@latest mcp
 ```
 
 **Cursor** (`~/.cursor/mcp.json` — global, works for all projects):
@@ -121,9 +121,9 @@ codex mcp add gitnexus -- npx -y gitnexus@latest mcp
 ```json
 {
   "mcpServers": {
-    "gitnexus": {
+    "codeAgent": {
       "command": "npx",
-      "args": ["-y", "gitnexus@latest", "mcp"]
+      "args": ["-y", "codeAgent@latest", "mcp"]
     }
   }
 }
@@ -134,9 +134,9 @@ codex mcp add gitnexus -- npx -y gitnexus@latest mcp
 ```json
 {
   "mcp": {
-    "gitnexus": {
+    "codeAgent": {
       "command": "npx",
-      "args": ["-y", "gitnexus@latest", "mcp"]
+      "args": ["-y", "codeAgent@latest", "mcp"]
     }
   }
 }
@@ -145,30 +145,30 @@ codex mcp add gitnexus -- npx -y gitnexus@latest mcp
 **Codex** (`~/.codex/config.toml` for system scope, or `.codex/config.toml` for project scope):
 
 ```toml
-[mcp_servers.gitnexus]
+[mcp_servers.codeAgent]
 command = "npx"
-args = ["-y", "gitnexus@latest", "mcp"]
+args = ["-y", "codeAgent@latest", "mcp"]
 ```
 
 ### CLI Commands
 
 ```bash
-gitnexus setup                    # Configure MCP for your editors (one-time)
-gitnexus analyze [path]           # Index a repository (or update stale index)
-gitnexus analyze --force          # Force full re-index
-gitnexus analyze --skills         # Generate repo-specific skill files from detected communities
-gitnexus analyze --skip-embeddings  # Skip embedding generation (faster)
-gitnexus analyze --embeddings     # Enable embedding generation (slower, better search)
-gitnexus analyze --verbose        # Log skipped files when parsers are unavailable
-gitnexus mcp                     # Start MCP server (stdio) — serves all indexed repos
-gitnexus serve                   # Start local HTTP server (multi-repo) for web UI connection
-gitnexus list                    # List all indexed repositories
-gitnexus status                  # Show index status for current repo
-gitnexus clean                   # Delete index for current repo
-gitnexus clean --all --force     # Delete all indexes
-gitnexus wiki [path]             # Generate repository wiki from knowledge graph
-gitnexus wiki --model <model>    # Wiki with custom LLM model (default: gpt-4o-mini)
-gitnexus wiki --base-url <url>   # Wiki with custom LLM API base URL
+codeAgent setup                    # Configure MCP for your editors (one-time)
+codeAgent analyze [path]           # Index a repository (or update stale index)
+codeAgent analyze --force          # Force full re-index
+codeAgent analyze --skills         # Generate repo-specific skill files from detected communities
+codeAgent analyze --skip-embeddings  # Skip embedding generation (faster)
+codeAgent analyze --embeddings     # Enable embedding generation (slower, better search)
+codeAgent analyze --verbose        # Log skipped files when parsers are unavailable
+codeAgent mcp                     # Start MCP server (stdio) — serves all indexed repos
+codeAgent serve                   # Start local HTTP server (multi-repo) for web UI connection
+codeAgent list                    # List all indexed repositories
+codeAgent status                  # Show index status for current repo
+codeAgent clean                   # Delete index for current repo
+codeAgent clean --all --force     # Delete all indexes
+codeAgent wiki [path]             # Generate repository wiki from knowledge graph
+codeAgent wiki --model <model>    # Wiki with custom LLM model (default: gpt-4o-mini)
+codeAgent wiki --base-url <url>   # Wiki with custom LLM API base URL
 ```
 
 ### What Your AI Agent Gets
@@ -191,13 +191,13 @@ gitnexus wiki --base-url <url>   # Wiki with custom LLM API base URL
 
 | Resource                                  | Purpose                                              |
 | ----------------------------------------- | ---------------------------------------------------- |
-| `gitnexus://repos`                      | List all indexed repositories (read this first)      |
-| `gitnexus://repo/{name}/context`        | Codebase stats, staleness check, and available tools |
-| `gitnexus://repo/{name}/clusters`       | All functional clusters with cohesion scores         |
-| `gitnexus://repo/{name}/cluster/{name}` | Cluster members and details                          |
-| `gitnexus://repo/{name}/processes`      | All execution flows                                  |
-| `gitnexus://repo/{name}/process/{name}` | Full process trace with steps                        |
-| `gitnexus://repo/{name}/schema`         | Graph schema for Cypher queries                      |
+| `codeAgent://repos`                      | List all indexed repositories (read this first)      |
+| `codeAgent://repo/{name}/context`        | Codebase stats, staleness check, and available tools |
+| `codeAgent://repo/{name}/clusters`       | All functional clusters with cohesion scores         |
+| `codeAgent://repo/{name}/cluster/{name}` | Cluster members and details                          |
+| `codeAgent://repo/{name}/processes`      | All execution flows                                  |
+| `codeAgent://repo/{name}/process/{name}` | Full process trace with steps                        |
+| `codeAgent://repo/{name}/schema`         | Graph schema for Cypher queries                      |
 
 **2 MCP prompts** for guided workflows:
 
@@ -215,30 +215,30 @@ gitnexus wiki --base-url <url>   # Wiki with custom LLM API base URL
 
 **Repo-specific skills** generated with `--skills`:
 
-When you run `gitnexus analyze --skills`, GitNexus detects the functional areas of your codebase (via Leiden community detection) and generates a `SKILL.md` file for each one under `.claude/skills/generated/`. Each skill describes a module's key files, entry points, execution flows, and cross-area connections — so your AI agent gets targeted context for the exact area of code you're working in. Skills are regenerated on each `--skills` run to stay current with the codebase.
+When you run `codeAgent analyze --skills`, codeAgent detects the functional areas of your codebase (via Leiden community detection) and generates a `SKILL.md` file for each one under `.claude/skills/generated/`. Each skill describes a module's key files, entry points, execution flows, and cross-area connections — so your AI agent gets targeted context for the exact area of code you're working in. Skills are regenerated on each `--skills` run to stay current with the codebase.
 
 ---
 
 ## Multi-Repo MCP Architecture
 
-GitNexus uses a **global registry** so one MCP server can serve multiple indexed repos. No per-project MCP config needed — set it up once and it works everywhere.
+codeAgent uses a **global registry** so one MCP server can serve multiple indexed repos. No per-project MCP config needed — set it up once and it works everywhere.
 
 ```mermaid
 flowchart TD
     subgraph CLI [CLI Commands]
-        Setup["gitnexus setup"]
-        Analyze["gitnexus analyze"]
-        Clean["gitnexus clean"]
-        List["gitnexus list"]
+        Setup["codeAgent setup"]
+        Analyze["codeAgent analyze"]
+        Clean["codeAgent clean"]
+        List["codeAgent list"]
     end
 
-    subgraph Registry ["~/.gitnexus/"]
+    subgraph Registry ["~/.codeAgent/"]
         RegFile["registry.json"]
     end
 
     subgraph Repos [Project Repos]
-        RepoA[".gitnexus/ in repo A"]
-        RepoB[".gitnexus/ in repo B"]
+        RepoA[".codeAgent/ in repo A"]
+        RepoB[".codeAgent/ in repo B"]
     end
 
     subgraph MCP [MCP Server]
@@ -263,7 +263,7 @@ flowchart TD
     ConnB -->|"queries"| RepoB
 ```
 
-**How it works:** Each `gitnexus analyze` stores the index in `.gitnexus/` inside the repo (portable, gitignored) and registers a pointer in `~/.gitnexus/registry.json`. When an AI agent starts, the MCP server reads the registry and can serve any indexed repo. LadybugDB connections are opened lazily on first query and evicted after 5 minutes of inactivity (max 5 concurrent). If only one repo is indexed, the `repo` parameter is optional on all tools — agents don't need to change anything.
+**How it works:** Each `codeAgent analyze` stores the index in `.codeAgent/` inside the repo (portable, gitignored) and registers a pointer in `~/.codeAgent/registry.json`. When an AI agent starts, the MCP server reads the registry and can serve any indexed repo. LadybugDB connections are opened lazily on first query and evicted after 5 minutes of inactivity (max 5 concurrent). If only one repo is indexed, the `repo` parameter is optional on all tools — agents don't need to change anything.
 
 ---
 
@@ -271,26 +271,26 @@ flowchart TD
 
 A fully client-side graph explorer and AI chat. No server, no install — your code never leaves the browser.
 
-**Try it now:** [gitnexus.vercel.app](https://gitnexus.vercel.app) — drag & drop a ZIP and start exploring.
+**Try it now:** [codeAgent.vercel.app](https://codeAgent.vercel.app) — drag & drop a ZIP and start exploring.
 
-<img width="2550" height="1343" alt="gitnexus_img" src="https://github.com/user-attachments/assets/cc5d637d-e0e5-48e6-93ff-5bcfdb929285" />
+<img width="2550" height="1343" alt="codeAgent_img" src="https://github.com/user-attachments/assets/cc5d637d-e0e5-48e6-93ff-5bcfdb929285" />
 
 Or run locally:
 
 ```bash
-git clone https://github.com/abhigyanpatwari/gitnexus.git
-cd gitnexus/gitnexus-web
+git clone https://github.com/abhigyanpatwari/codeAgent.git
+cd codeAgent/codeAgent-web
 npm install
 npm run dev
 ```
 
 The web UI uses the same indexing pipeline as the CLI but runs entirely in WebAssembly (Tree-sitter WASM, LadybugDB WASM, in-browser embeddings). It's great for quick exploration but limited by browser memory for larger repos.
 
-**Local Backend Mode:** Run `gitnexus serve` and open the web UI locally — it auto-detects the server and shows all your indexed repos, with full AI chat support. No need to re-upload or re-index. The agent's tools (Cypher queries, search, code navigation) route through the backend HTTP API automatically.
+**Local Backend Mode:** Run `codeAgent serve` and open the web UI locally — it auto-detects the server and shows all your indexed repos, with full AI chat support. No need to re-upload or re-index. The agent's tools (Cypher queries, search, code navigation) route through the backend HTTP API automatically.
 
 ---
 
-## The Problem GitNexus Solves
+## The Problem codeAgent Solves
 
 Tools like **Cursor**, **Claude Code**, **Codex**, **Cline**, **Roo Code**, and **Windsurf** are powerful — but they don't truly know your codebase structure.
 
@@ -300,9 +300,9 @@ Tools like **Cursor**, **Claude Code**, **Codex**, **Cline**, **Roo Code**, and 
 2. Doesn't know 47 functions depend on its return type
 3. **Breaking changes ship**
 
-### Traditional Graph RAG vs GitNexus
+### Traditional Graph RAG vs codeAgent
 
-Traditional approaches give the LLM raw graph edges and hope it explores enough. GitNexus **precomputes structure at index time** — clustering, tracing, scoring — so tools return complete context in one call:
+Traditional approaches give the LLM raw graph edges and hope it explores enough. codeAgent **precomputes structure at index time** — clustering, tracing, scoring — so tools return complete context in one call:
 
 ```mermaid
 flowchart TB
@@ -317,7 +317,7 @@ flowchart TB
         Q4 --> OUT1["Answer after 4+ queries"]
     end
 
-    subgraph GN["GitNexus Smart Tools"]
+    subgraph GN["codeAgent Smart Tools"]
         direction TB
         U2["User: What depends on UserService?"]
         U2 --> TOOL["impact UserService upstream"]
@@ -337,7 +337,7 @@ flowchart TB
 
 ## How It Works
 
-GitNexus builds a complete knowledge graph of your codebase through a multi-phase indexing pipeline:
+codeAgent builds a complete knowledge graph of your codebase through a multi-phase indexing pipeline:
 
 1. **Structure** — Walks the file tree and maps folder/file relationships
 2. **Parsing** — Extracts functions, classes, methods, and interfaces using Tree-sitter ASTs
@@ -483,14 +483,14 @@ Generate LLM-powered documentation from your knowledge graph:
 
 ```bash
 # Requires an LLM API key (OPENAI_API_KEY, etc.)
-gitnexus wiki
+codeAgent wiki
 
 # Use a custom model or provider
-gitnexus wiki --model gpt-4o
-gitnexus wiki --base-url https://api.anthropic.com/v1
+codeAgent wiki --model gpt-4o
+codeAgent wiki --base-url https://api.anthropic.com/v1
 
 # Force full regeneration
-gitnexus wiki --force
+codeAgent wiki --force
 ```
 
 The wiki generator reads the indexed graph structure, groups files into modules via LLM, generates per-module documentation pages, and creates an overview page — all with cross-references to the knowledge graph.
@@ -535,7 +535,7 @@ The wiki generator reads the indexed graph structure, groups files into modules 
 
 ## Security & Privacy
 
-- **CLI**: Everything runs locally on your machine. No network calls. Index stored in `.gitnexus/` (gitignored). Global registry at `~/.gitnexus/` stores only paths and metadata.
+- **CLI**: Everything runs locally on your machine. No network calls. Index stored in `.codeAgent/` (gitignored). Global registry at `~/.codeAgent/` stores only paths and metadata.
 - **Web**: Everything runs in your browser. No code uploaded to any server. API keys stored in localStorage only.
 - Open source — audit the code yourself.
 

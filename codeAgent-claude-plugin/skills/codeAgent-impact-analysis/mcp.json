@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "codeAgent": {
+      "command": "npx",
+      "args": ["-y", "codeAgent@latest", "mcp"]
+    }
+  }
+}

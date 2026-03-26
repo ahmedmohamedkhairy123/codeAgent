@@ -42,7 +42,7 @@ coverage/
 
 
 .env*.local
-.gitnexus
+.codeAgent
 .claude/settings.local.json
 
 # Claude Code worktrees
@@ -60,13 +60,13 @@ repomix-output*
 # Design docs (local only)
 docs/plans/
 
-gitnexus/test/fixtures/mini-repo/*.md
-gitnexus/test/fixtures/mini-repo/.claude
-gitnexus/test/fixtures/mini-repo/.gitignore
+codeAgent/test/fixtures/mini-repo/*.md
+codeAgent/test/fixtures/mini-repo/.claude
+codeAgent/test/fixtures/mini-repo/.gitignore
 
 # Ignore csharp generated obj and bin folders
-gitnexus/test/fixtures/lang-resolution/**/obj
-gitnexus/test/fixtures/lang-resolution/**/bin
-GitNexus.sln
+codeAgent/test/fixtures/lang-resolution/**/obj
+codeAgent/test/fixtures/lang-resolution/**/bin
+codeAgent.sln
 # Git worktrees
 .worktrees/

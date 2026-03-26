@@ -10,7 +10,7 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
-      - uses: ./.github/actions/setup-gitnexus
+      - uses: ./.github/actions/setup-codeAgent
         with:
           build: 'true'
 
@@ -26,7 +26,7 @@ jobs:
           --coverage.reporter=text
           --coverage.thresholdAutoUpdate=false
           --coverage.reportOnFailure=true
-        working-directory: gitnexus
+        working-directory: codeAgent
 
       - name: Upload test reports
         if: always()
@@ -34,9 +34,9 @@ jobs:
         with:
           name: test-reports
           path: |
-            gitnexus/coverage/coverage-summary.json
-            gitnexus/coverage/coverage-final.json
-            gitnexus/test-results.json
+            codeAgent/coverage/coverage-summary.json
+            codeAgent/coverage/coverage-final.json
+            codeAgent/test-results.json
           retention-days: 5
 
   cross-platform:
@@ -50,8 +50,8 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
-      - uses: ./.github/actions/setup-gitnexus
+      - uses: ./.github/actions/setup-codeAgent
         with:
           build: 'true'
       - run: npx vitest run
-        working-directory: gitnexus
+        working-directory: codeAgent

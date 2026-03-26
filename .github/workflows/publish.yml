@@ -29,9 +29,9 @@ jobs:
           node-version: 20
           registry-url: https://registry.npmjs.org
           cache: npm
-          cache-dependency-path: gitnexus/package-lock.json
+          cache-dependency-path: codeAgent/package-lock.json
       - run: npm ci
-        working-directory: gitnexus
+        working-directory: codeAgent
 
       - name: Verify version consistency
         shell: bash
@@ -47,19 +47,19 @@ jobs:
             exit 1
           fi
           echo "Version verified: $PKG_VERSION"
-        working-directory: gitnexus
+        working-directory: codeAgent
 
       - name: Build
         run: npm run build
-        working-directory: gitnexus
+        working-directory: codeAgent
 
       - name: Dry-run publish
         run: npm publish --dry-run
-        working-directory: gitnexus
+        working-directory: codeAgent
 
       - name: Publish to npm
         run: npm publish --provenance --access public
-        working-directory: gitnexus
+        working-directory: codeAgent
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
