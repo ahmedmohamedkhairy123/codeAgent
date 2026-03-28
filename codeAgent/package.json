@@ -2,16 +2,16 @@
   "name": "codeAgent",
   "version": "1.4.7",
   "description": "Graph-powered code intelligence for AI agents. Index any codebase, query via MCP or CLI.",
-  "author": "Abhigyan Patwari",
+  "author": "Ahmed Mohamed Khairy ",
   "license": "PolyForm-Noncommercial-1.0.0",
-  "homepage": "https://github.com/abhigyanpatwari/codeAgent#readme",
+  "homepage": "https://github.com/AhmedMohamedKhairy123-git/codeAgent#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abhigyanpatwari/codeAgent.git",
+    "url": "git+https://github.com/AhmedMohamedKhairy123-git/codeAgent",
     "directory": "codeAgent"
   },
   "bugs": {
-    "url": "https://github.com/abhigyanpatwari/codeAgent/issues"
+    "url": "https://github.com/AhmedMohamedKhairy123-git/codeAgent/issues"
   },
   "keywords": [
     "mcp",

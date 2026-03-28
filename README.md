@@ -278,7 +278,7 @@ A fully client-side graph explorer and AI chat. No server, no install — your c
 Or run locally:
 
 ```bash
-git clone https://github.com/abhigyanpatwari/codeAgent.git
+git clone https://github.com/AhmedMohamedKhairy123-git/codeAgent
 cd codeAgent/codeAgent-web
 npm install
 npm run dev
